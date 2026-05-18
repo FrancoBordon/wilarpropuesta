@@ -8,6 +8,7 @@ Landing page comercial creada por FC IA Studio para presentar la propuesta digit
 - `styles.css`: estilos responsive.
 - `script.js`: animaciones y navegación.
 - `assets/`: logos e imagen de referencia.
+- `public/`: copia lista para Vercel como directorio de salida.
 - `vercel.json`: configuración lista para Vercel.
 
 ## Subir a GitHub
@@ -22,8 +23,10 @@ Landing page comercial creada por FC IA Studio para presentar la propuesta digit
 2. Importar el repositorio de GitHub.
 3. Framework Preset: `Other`.
 4. Build Command: `npm run build`.
-5. Output Directory: dejar vacío o usar `.`.
+5. Output Directory: `public`.
 6. Deploy.
+
+Si Vercel muestra el error `No Output Directory named "public" found`, volver a subir esta version actualizada del proyecto, porque ya incluye la carpeta `public`.
 
 ## Contacto WhatsApp
 
