@@ -627,8 +627,8 @@ p {
 
 .investment-card {
   padding: clamp(24px, 5vw, 46px);
-  grid-template-columns: minmax(0, 1fr) minmax(360px, 0.88fr);
-  overflow: hidden;
+  grid-template-columns: minmax(0, 0.95fr) minmax(0, 1fr);
+  overflow: visible;
 }
 
 .totals {
@@ -648,7 +648,8 @@ p {
 
 .totals strong {
   font-size: 1.45rem;
-  white-space: nowrap;
+  white-space: normal;
+  text-align: right;
 }
 
 .totals .total-line {
@@ -667,8 +668,13 @@ p {
 
 .total-line strong {
   color: var(--accent);
-  font-size: clamp(2rem, 3.2vw, 2.8rem);
-  white-space: nowrap;
+  font-size: clamp(2rem, 2.7vw, 2.65rem);
+  white-space: normal;
+}
+
+.total-line span,
+.payment-note strong {
+  min-width: 0;
 }
 
 .footer {
@@ -741,10 +747,6 @@ p {
   .pricing-grid,
   .steps {
     grid-template-columns: 1fr;
-  }
-
-  .investment-card {
-    overflow: visible;
   }
 
   .hero {
