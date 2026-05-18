@@ -1,0 +1,10 @@
+{
+  "name": "wilar-propuesta",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Landing page de propuesta comercial para WILAR realizada por FC IA Studio.",
+  "scripts": {
+    "build": "echo Static site ready",
+    "start": "npx serve ."
+  }
+}
